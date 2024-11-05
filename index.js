@@ -6,7 +6,7 @@ thmasButton.addEventListener('click', clickButton);
 
 function clickButton() {
     var URL = "https://ameur-bellil.github.io/congrats/" ;
-    var correctinput = parseInt(thmasInputText.value);
+    var correctinput = thmasInputText.value;
 
     if (correctinput === "dsrarht") {
         var win = window.open(URL, "_blank");

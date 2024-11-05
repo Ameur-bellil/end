@@ -10,6 +10,7 @@ function clickButton() {
 
     if (correctinput === "dsrarht") {
         var win = window.open(URL, "_blank");
+        console.log(correctinput === "dsrarht")
     }else{
         window.alert("Try again")
     }

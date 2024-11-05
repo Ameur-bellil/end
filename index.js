@@ -5,9 +5,14 @@ const thmasInputText = document.querySelector('#thmas-input-text');
 thmasButton.addEventListener('click', clickButton);
 
 function clickButton() {
-var URL = "https://tayssirgh.github.io/congrats" + thmasInputText.value + "354dz846/";
+    var URL = "https://ameur-bellil.github.io/congrats/" ;
+    var correctinput = parseInt(thmasInputText.value);
 
-window.location.href = URL;
+    if (correctinput === "dsrarht") {
+        var win = window.open(URL, "_blank");
+    }else{
+        window.alert("Try again")
+    }
 }
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById('nav-menu'),

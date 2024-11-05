@@ -5,15 +5,17 @@ const thmasInputText = document.querySelector('#thmas-input-text');
 thmasButton.addEventListener('click', clickButton);
 
 function clickButton() {
-    var URL = "https://ameur-bellil.github.io/congrats/" ;
-    var correctinput = thmasInputText.value;
+    var URL = "https://ameur-bellil.github.io/congrats/";
 
-    if (correctinput === "dsrarht") {
+    var correctInput = thmasInputText.value.trim();
+
+    if (correctInput === "dsrarht") {
         var win = window.open(URL, "_blank");
-        console.log(correctinput === "dsrarht")
-    }else{
-        window.alert("Try again")
+        console.log("Correct input:", correctInput);
+    } else {
+        window.alert("Try again");
     }
+
 }
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById('nav-menu'),
